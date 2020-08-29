@@ -19,4 +19,5 @@ Build image using the Docker Toolbox command line:
 2. `docker build -t ros-image .`
 
 Start a container with the image you just built in interactive mode:
-1. `docker run -it ros-image`
+1. `docker run -it --env="DISPLAY" --privileged --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" ros-image ros-image`
+2. 
