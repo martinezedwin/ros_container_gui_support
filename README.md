@@ -30,3 +30,7 @@ Start a container with the image you just built in interactive mode:
 
 Using the scripts:
 * Replace step 4 with (change to the ros folder, give the script permission, and finally run it) Probably need to run it twice due to same GUI issue as bove: `cd ros && chmod +x turtlesim_with_keyboard.sh && ./turtlesim_with_keyboard_control.sh`
+
+Publish topics from command line example:
+`rostopic pub -r 10 /turtle1/cmd_vel geometry_msgs/Twist '{linear:  {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}'
+`
