@@ -29,4 +29,4 @@ Start a container with the image you just built in interactive mode:
 5. take away permissions when you're done: `xhost - local:root`
 
 Using the scripts:
-* Replace step 4 with (change to the ros folder, give the script permission, and finally run it: `cd ros && chmod +x turtlesim_with_keyboard.sh && ./turtlesim_with_keyboard_control.sh`
+* Replace step 4 with (change to the ros folder, give the script permission, and finally run it) Probably need to run it twice due to same GUI issue as bove: `cd ros && chmod +x turtlesim_with_keyboard.sh && ./turtlesim_with_keyboard_control.sh`
