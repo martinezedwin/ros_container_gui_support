@@ -27,3 +27,6 @@ Start a container with the image you just built in interactive mode:
 3. start roscore in the background: `roscore &`
 4. start turtlesim node: `rosrun turtlesim turtlesim_node` (you probably have to run this twice as the first time the GUI is blakc screen)
 5. take away permissions when you're done: `xhost - local:root`
+
+Using the scripts:
+* Replace step 4 with (change to the ros folder, give the script permission, and finally run it: `cd ros && chmod +x turtlesim_with_keyboard.sh && ./turtlesim_with_keyboard_control.sh`
