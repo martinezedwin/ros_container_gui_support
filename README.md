@@ -23,7 +23,7 @@ Build image using the Docker Toolbox command line:
 
 Start a container with the image you just built in interactive mode:
 1. give permissions: `xhost + local:root`
-2. start container: `docker run -it --env="DISPLAY" --privileged --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name=ros_container ros-image`
+2. start container: `docker run -it --env="DISPLAY" --privileged --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --volume="$(pwd):/ros" --name=ros_container ros-image`
 3. start roscore in the background: `roscore &`
-4. start turtlesim node: `rosrun turtlesim turtlesim_node`
+4. start turtlesim node: `rosrun turtlesim turtlesim_node` (you probably have to run this twice as the first time the GUI is blakc screen)
 5. take away permissions when you're done: `xhost - local:root`
