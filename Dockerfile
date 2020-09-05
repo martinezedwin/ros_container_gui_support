@@ -1,5 +1,5 @@
-# Utilizing ROS Kinetic (Ubuntu 16.04)
-FROM ros:kinetic-robot
+# Utilizing ROS Neotic (Ubuntu 20.04)
+FROM ros:noetic-robot
 
 # Update
 RUN apt update
