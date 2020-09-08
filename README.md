@@ -26,7 +26,7 @@ Using WSL2 Ubuntu command line, build the image:
 2. `docker build -t ros-image .`
 
 Start a container with the image you just built in interactive mode:
-1. start container: `docker run -it --env="DISPLAY" --privileged --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --volume="$(pwd):/ros" --name=ros_container ros-image`
+1. start container: `docker run -it --env="DISPLAY" --privileged --volume="$(pwd):/ros" --name=ros_container ros-image`
 2. start roscore in the background: `roscore &`
 3. start turtlesim node: `rosrun turtlesim turtlesim_node` 
 
