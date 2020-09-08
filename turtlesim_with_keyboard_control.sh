@@ -2,9 +2,6 @@
 
 set -e 
 
-# Stop previous instances that may be running
-
-
 # Start roscore in the background
 roscore &
 
