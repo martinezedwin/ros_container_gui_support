@@ -2,10 +2,13 @@
 
 Utilizing the official [Docker](https://hub.docker.com/_/ros) images to run ROS Docker containers.
 
+<p align="center">
+   <img width="780" src="./images/Final_result.png" alt="image">
+</p>
 
 ## DEPENDENCIES
 
-[Ubuntu Windows Subsystem for Linux 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)? (You may not need this but the commands ran here will be Ubuntu base)
+[Ubuntu Windows Subsystem for Linux 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 [Docker for WSL2](https://docs.docker.com/docker-for-windows/wsl/)
 
