@@ -59,3 +59,7 @@ Using the scripts:
 Publish topics from command line example:
 * `rostopic pub -r 10 /turtle1/cmd_vel geometry_msgs/Twist '{linear:  {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}'
 `
+
+### TROUBLESHOOTING
+* Make sure your firewall is allowing xserver in both private and public network.
+* Make sure your anit-virus software is allowing docker to do it's thing.
