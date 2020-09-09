@@ -4,7 +4,7 @@ Utilizing the official [Docker](https://hub.docker.com/_/ros) images to run ROS 
 
 <p align="center">
    <img width="780" src="./images/Final_result.png" alt="image">
-</p>
+</p>	
 
 ## DEPENDENCIES
 
