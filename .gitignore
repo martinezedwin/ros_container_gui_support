@@ -1,1 +1,3 @@
-src*
+# The files to create package
+build
+devel
