@@ -25,7 +25,7 @@ Make sure your windows build supports WSL2 and Docker (see dependencies) and ins
 Follow [this guide](https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242) to get xserver running on Windows 10 to be able to use GUIs.
 
 Using WSL2 Ubuntu command line, build the image:
-1. `cd /PATH/TO/ros`
+1. `cd /PATH/TO/ros_container_gui_support`
 2. `docker build -t ros-image .`
 
 Start a container with the image you just built in interactive mode:
@@ -43,7 +43,7 @@ Publish topics from command line example:
 ### On Ubuntu
 
 Build image using the Docker in command line: 
-1. `cd /PATH/TO/ros`
+1. `cd /PATH/TO/ros_container_gui_support`
 2. `docker build -t ros-image .`
 
 Start a container with the image you just built in interactive mode:
