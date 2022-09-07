@@ -8,14 +8,19 @@ Utilizing the official [Docker](https://hub.docker.com/_/ros) images to run ROS 
 
 ## DEPENDENCIES
 
+### Windows
+
 [Ubuntu Windows Subsystem for Linux 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 [Docker for WSL2](https://docs.docker.com/docker-for-windows/wsl/)
 
-## Using GUI with ROS Docker Containers:
+### Using GUI with ROS Docker Containers:
 [GUI SUPPORT ON LINUX](http://wiki.ros.org/docker/Tutorials/GUI)
 
 [GUI SUPPORT ON WINDOWS](https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242)
+
+### OSX
+[XQuartz](https://www.xquartz.orgs)s
 
 ## HOW TO RUN
 
@@ -39,6 +44,14 @@ Using the scripts:
 Publish topics from command line example:
 * `rostopic pub -r 10 /turtle1/cmd_vel geometry_msgs/Twist '{linear:  {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.0,y: 0.0,z: 0.0}}'
 `
+
+### On MAC
+1. Install XQuartz
+2. On mac terminal get inet ip from running `ifconfig en0` 
+3. Launch XQuartz
+   * In Preferences>Security: Make Sure Authenticate connections and Allow connections from network clients boxes are checked.
+   * In XQuartz terminal run `xhost IP` where IP is the IP from step 2.
+4. Follow step 2-3 from Windows guide.
 
 ### On Ubuntu
 
